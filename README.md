@@ -2,14 +2,25 @@
 
 A comprehensive and robust framework for predicting cell types by integrating multi-omic features from single-cell Hi-C data 
 
-##Framework
-![image](Figure/feamework.jpg)
+## Framework
+![image](Figure/framework.jpg)
+
+(A) Data preparation. The input scHi-C dataset undergoes transformation into matrices. Our model generates sparse chromosome contact matrices for each cell from interaction pairs files in scHi-C data and simultaneously produces enhanced matrices through spatial smoothing. (B) Feature extraction. In this study, we extract small intra-domain contact probability (SICP) from the sparse matrices, smoothed small intra-domain contact probability (SSICP), and smoothed bin contact probability (SBCP) from the enhanced matrices. (C) Feature fusion. To amalgamate feature information from diverse perspectives, we introduce a fusion module. This module employs two convolutional blocks to extract more intricate and crucial features. (D) Cell classification. The fusion features are then employed to accurately predict cell types.
 
 ## Overview
 
-The folder "data" contains the data of the promoter, containing the sequences of 12 datasets for seven species.  
-The folder "EPdata" contains the data of the enhancer and promoter, containing the sequences of the independent test sets and training sets. The first half of each file is labeled 1, and the second half is labeled 0.  
-The folder "model" contains the trained models on 12 datasets of seven species for use or validation.    
+The folder "4DN" contains of the preocessing of 4DN sci-HiC dataset.  
+The folder "Flyamer" contains of the preocessing of Flyamer et al. dataset.  
+The folder "Ramani" contains of the preocessing of Ramani et al. dataset.  
+The folder "Lee" contains of the preocessing of Lee et al. dataset.  
+The folder "Collombet" contains of the preocessing of Collombet et al. dataset.  
+The folder "Nagano" contains of the preocessing of Nagano et al. dataset.  
+The folder "Data_filter" contains processed data from six datasets.  
+
+In the above six folders, each folder contains folder "generate_features" and folder "model":  
+The folder "generate_features" caontains of the peocess of extracting multi-omic features.  
+The folder "model" contains the framework of models.
+
 The file "index_promoters.txt" and "word2vec_promoters.txt" are benchmark files used to extract word2vec features of human.  
 The file "RF.py" is the code of the random forest model.  
 The file "CNN.py" is the code of the CNN model.  
@@ -28,9 +39,10 @@ sklearn
 numpy  
 
 ## Usage
-First, you should extract features of promoters, you can run the script to extract word2vec-based features as follows:  
-`python feature_code.py`  
-The extraction of other features is done using iLearnPlus [1].  
+First, you should extract features of data, you can run the script to extract smoothed bin contact probabilit (SBCP), small intra-domain contact probability (SICP), and smoothed small intra-domain contact probability (SSICP) features as follows:  
+`python ./generate_features/generate_feature_sicp.py`  
+`python ./generate_features/generate_feature_ssicp.py`  
+`python ./generate_features/generate_feature_sbcp.py`    
 Then run the script as follows to compile and run iPro-WAEL:  
 `python main.py`  
 Note that the variable 'cell_lines' needs to be manually modified to change the predicted cell line.  
