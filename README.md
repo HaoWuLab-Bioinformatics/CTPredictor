@@ -21,12 +21,12 @@ In the above six folders, each folder contains folder "generate_features" and fo
 The folder "generate_features" caontains of the peocess of extracting multi-omic features.  
 The folder "model" contains the framework of models.  
 
-In folder "generate_features":  
+In folder "generate_features" of the above six folders:  
 The file "generate_feature_sicp.py" is the code to extract small intra-domain contact probability (SICP) feature set.  
 The file "generate_feature_ssicp.py" is the code to extract smoothed small intra-domain contact probability (SSICP) feature set.  
 The file "generate_feature_sbcp.py" is the code to extract smoothed bin contact probabilit (SBCP) feature set.  
 
-In folder "model":  
+In folder "model" of the above six folders:  
 The file "final_sicp_ssicp_sbcp.py" is the code of model.  
 The file "focal_loss,py" is the code of loss function.  
 
