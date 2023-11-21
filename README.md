@@ -19,16 +19,16 @@ The folder "Data_filter" contains processed data from six datasets.
 
 In the above six folders, each folder contains folder "generate_features" and folder "model":  
 The folder "generate_features" caontains of the peocess of extracting multi-omic features.  
-The folder "model" contains the framework of models.
+The folder "model" contains the framework of models.  
 
-The file "index_promoters.txt" and "word2vec_promoters.txt" are benchmark files used to extract word2vec features of human.  
-The file "RF.py" is the code of the random forest model.  
-The file "CNN.py" is the code of the CNN model.  
-The file "Weighted_average.py" is the code of the weighted average algorithm.  
-The file "main.py" is the code of the entire model and will import RF, CNN and Weighted_average.  
-The file "feature_code.py" is the code used to extract word2vec features.  
-The file "feature_importance.rar" is a compressed file for exploring important motifs, including code and specific results.  
-The file "R.capsulatus.rar" is an example feature file to verify model performance (the feature file for the human dataset is too large to upload to github).  
+In folder "generate_features":  
+The file "generate_feature_sicp.py" is the code to extract small intra-domain contact probability (SICP) feature set.  
+The file "generate_feature_ssicp.py" is the code to extract smoothed small intra-domain contact probability (SSICP) feature set.  
+The file "generate_feature_sbcp.py" is the code to extract smoothed bin contact probabilit (SBCP) feature set.  
+
+In folder "model":  
+The file "final_sicp_ssicp_sbcp.py" is the code of model.  
+The file "focal_loss,py" is the code of loss function.  
 
 ## Dependency
 Mainly used libraries:  
@@ -43,6 +43,5 @@ First, you should extract features of data, you can run the script to extract sm
 `python ./generate_features/generate_feature_sicp.py`  
 `python ./generate_features/generate_feature_ssicp.py`  
 `python ./generate_features/generate_feature_sbcp.py`    
-Then run the script as follows to compile and run iPro-WAEL:  
-`python main.py`  
-Note that the variable 'cell_lines' needs to be manually modified to change the predicted cell line.  
+Then run the script as follows to compile and run CTPredictor:  
+`python ./model/final_sicp_ssicp_sbcp.py`     
