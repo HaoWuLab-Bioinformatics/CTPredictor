@@ -4,7 +4,7 @@ A comprehensive and robust framework for predicting cell types by integrating mu
 
 ##
 Framework
-![image](https://github.com/HaoWuLab-Bioinformatics/CTPreditor/Figure/网络框架图.jpg)
+![image](https://github.com/HaoWuLab-Bioinformatics/CTPreditor/Figure/framework.jpg)
 
 ## Overview
 
