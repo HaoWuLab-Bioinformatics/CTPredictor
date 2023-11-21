@@ -3,7 +3,7 @@
 A comprehensive and robust framework for predicting cell types by integrating multi-omic features from single-cell Hi-C data 
 
 ##Framework
-![image](https://github.com/HaoWuLab-Bioinformatics/CTPredictor/Figure/framework.jpg).
+![image](Figure/feamework.jpg)
 
 ## Overview
 
