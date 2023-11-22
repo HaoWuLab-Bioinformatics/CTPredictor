@@ -10,7 +10,7 @@ A comprehensive and robust framework for predicting cell types by integrating mu
 ## Overview
 
 The folder "4DN" contains of the preocessing of 4DN sci-HiC dataset.  
-The folder "Flyamer_three" contains of the preocessing of Flyamer et al. dataset.  
+The folder "Flyamer" contains of the preocessing of Flyamer et al. dataset.  
 The folder "Ramani" contains of the preocessing of Ramani et al. dataset.  
 The folder "Lee" contains of the preocessing of Lee et al. dataset.  
 The folder "Collombet" contains of the preocessing of Collombet et al. dataset.  
