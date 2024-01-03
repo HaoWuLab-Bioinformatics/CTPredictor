@@ -32,8 +32,8 @@ The file "focal_loss,py" is the code of loss function.
 
 ## Dependency
 Python 3.6    
-pytorch
-xlsxwriter
+pytorch  
+xlsxwriter  
 sklearn  
 numpy  
 
