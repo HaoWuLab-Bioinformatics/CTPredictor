@@ -31,7 +31,6 @@ The file "final_sicp_ssicp_sbcp.py" is the code of model.
 The file "focal_loss,py" is the code of loss function.  
 
 ## Dependency
-Mainly used libraries:  
 Python 3.6    
 pytorch
 xlsxwriter
