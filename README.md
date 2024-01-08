@@ -36,6 +36,8 @@ pytorch
 xlsxwriter  
 sklearn  
 numpy  
+collection  
+scipy
 
 ## Usage
 First, you should extract features of data, you can run the script to extract smoothed bin contact probabilit (SBCP), small intra-domain contact probability (SICP), and smoothed small intra-domain contact probability (SSICP) features as follows:  
